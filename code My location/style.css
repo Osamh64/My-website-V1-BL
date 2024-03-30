@@ -30,3 +30,9 @@
 .centered-text {
   text-align: center;
 }
+
+p{
+  color: black;
+  text-align: center !important;
+}
+

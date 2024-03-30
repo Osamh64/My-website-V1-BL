@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>عوالمنا</title>
-  <link rel="icon" href="Website.jpg">
+  <link rel="stylesheet" href="style.css">
   <style>
     /* Category box styles */
     .category-box {
@@ -57,5 +57,9 @@
       </ul>
     </div>
   </aside>
+  <p>قلب العنقاء</p>
+  <h6>
+  كان الملك
+  </h6>
 </body>
 </html>
