@@ -1,18 +1,5 @@
 {
-    "sqltools.connections": [
-        {
-            "mysqlOptions": {
-                "authProtocol": "default",
-                "enableSsl": "Disabled"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MySQL",
-            "name": "test",
-            "socketPath": "C:\\Users\\ABC\\Desktop\\My location\\code My location\\Database.sql",
-            "database": "Database",
-            "username": "osama"
-        }
+    "cSpell.words": [
+        "الحساب"
     ]
 }

@@ -10,6 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .category-box a {
@@ -22,17 +23,46 @@
   text-align: center;
 }
 
-.category-box .category-title {
-  margin: 0;
-  font-size: 16px;
-}
-
-.centered-text {
-  text-align: center;
-}
-
-p{
+.account-links {
   color: black;
-  text-align: center !important;
+  text-align: left;
+  vertical-align: top;
 }
 
+.aside-page {
+  position: relative;
+}
+
+.account-links {
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+
+.location {
+  display: inline-block;
+}
+.User {
+  float: left;
+  font-size: 14px;
+  text-align:
+  }
+
+  input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  input[type="file"]::before {
+    content: 'رفع صورة';
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="file"]::after {
+    color: white;
+  }
