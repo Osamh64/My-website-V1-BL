@@ -1,7 +1,20 @@
+/* تصميم الصندوق الخاص بالفئة */
 .category-box {
+  position: relative; /* إنشاء سياق تموضع جديد */
   border: 1px solid #ccc;
   padding: 10px;  
   margin: 20px;
+  margin-top: 40px; /* إضافة بعض الهامش العلوي لإنشاء مساحة لشريط البحث */
+}
+
+.account-links {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  pointer-events: none; /* منع التفاعل مع العنصر */
+  color: black;
+  text-align: left;
+  user-select: none; /* منع تحديد النص */
 }
 
 .category-box ul {
@@ -42,27 +55,138 @@
 .location {
   display: inline-block;
 }
+
 .User {
   float: left;
   font-size: 14px;
-  text-align:
-  }
+  text-align: center;
+  margin-left: auto; /* يدفع العنصر إلى النهاية اليمنى */
+  position: relative; /* جعل الخاصية top تعمل */
+  top: 50px; /* تعديل حسب التخطيط الفعلي */
+}
 
-  input[type="file"]::-webkit-file-upload-button {
-    visibility: hidden;
-  }
-  input[type="file"]::before {
-    content: 'رفع صورة';
-    display: inline-block;
-    background: green;
-    color: white;
-    padding: 8px 20px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  input[type="file"]::after {
-    color: white;
-  }
+/* تصميم زر رفع الملف */
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+input[type="file"]::before {
+  content: 'رفع صورة';
+  display: inline-block;
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* تحديد محاذاة النص داخل الجدول */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center; /* لتوسيط النص داخل الجدول */
+}
+
+th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.data {
+  width: 100%; /* ضبط العرض حسب الحاجة */
+  height: 20px; /* ضبط الارتفاع حسب الحاجة */
+  margin-left: 10px; /* إضافة مسافة بين النص وعناصر progress */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* تصميم مخصص */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+main {
+  padding: 20px;
+  text-align: right;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

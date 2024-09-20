@@ -1,5 +1,17 @@
 {
-    "cSpell.words": [
-        "الحساب"
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Database_My_location",
+            "database": "Database",
+            "username": "osamh64"
+        }
     ]
 }
